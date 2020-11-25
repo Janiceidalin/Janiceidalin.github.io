@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+
+div.half {
+  width: 50%;
+  border: 1px solid powderblue;
+}
+p.ex1 {
+  max-height: 50px;
+  overflow: auto;
+}
+div.ex3 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: auto;
+}
+
+
+</style>
+</head>
+<body>
+<div class="half"> width of 50%.</div>
+<hr />
+<p class="ex1">Max height</p>
+<hr />
+<div class="ex3">Overflow: auto</div>
+
+</body>
+</html>
