@@ -75,6 +75,20 @@ table.e {
 }
 .e tr:nth-child(odd) {background-color: lightgreen;}
 .e tr:nth-child(even) {background-color: green;}
+  
+table.f {
+  border-collapse: collapse;
+  width: 70%;
+  margin:auto;
+}
+
+.f th, .f td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.f tr:hover {background-color:green;}
 
   
 </style>
@@ -181,7 +195,25 @@ table.e {
     <td>$150</td>
   </tr>
 <hr/>
-
+<table class="f">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+<hr/>
+<hr/>
+<hr/>
 
 
   
