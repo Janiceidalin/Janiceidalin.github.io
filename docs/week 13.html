@@ -64,6 +64,18 @@ table.d {
   color: white;
 }
 
+table.e {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.e th, .e td {
+  text-align: left;
+  padding: 8px;
+}
+.e tr:nth-child(odd) {background-color: lightgreen;}
+.e tr:nth-child(even) {background-color: green;}
+
   
 </style>
 </head>
@@ -151,8 +163,23 @@ table.d {
     <td>Griffin</td>
     <td>$150</td>
   </tr>
-
 <hr/>
+<table class="e">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
 <hr/>
 
 
