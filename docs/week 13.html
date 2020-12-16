@@ -27,12 +27,26 @@ table.a {
   border: 1px solid black;
 }
 table.b { border-collapse: collapse; }
-tr { border: none; }
-td {
+.b tr { border: none; }
+.b td {
   border-right: solid 1px #f00; 
   border-left: solid 1px #f00;
 }
-  
+table.c, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table.c {
+  border-collapse: collapse;
+  width: 90%;
+  margin:auto;
+}
+
+.c th, td {
+  padding: 15px;
+}
+
   
 </style>
 </head>
@@ -86,7 +100,23 @@ td {
 </tr>
 </table>
 <hr/>
-  
+<table class="c">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+</table>
 <hr/>
 <hr/>
 <hr/>
