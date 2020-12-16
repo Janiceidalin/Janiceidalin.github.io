@@ -3,12 +3,31 @@
 <style>
 ol.d {list-style-type: armenian;
 }
-h1 {
-  
+ul.a {
+  list-style: none; /* Remove HTML bullets */
+  padding: 0;
+  margin: 0;
+}
+
+li.a { 
+  padding-left: 16px; 
+}
+
+li.a::before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: blue; /* Or a color you prefer */
+}
+
+ul.b {
+  list-style-image: url('images/marker.png');
+}
+
   
   
 </style>
 </head>
+  
 <body>
 <ol class="d">
   <li>change list style</li>
@@ -16,27 +35,17 @@ h1 {
   <li>change list style</li>
 </ol>
 <hr/>
-<h1>
-<style>
-ul {
-  list-style: none; /* Remove HTML bullets */
-  padding: 0;
-  margin: 0;
-}
+<ul class="a">
+  <li class="a">use custom bullet for list items</li>
+  <li class="a">use custom bullet for list items</li>
+  <li class="a">use custom bullet for list items</li>
+</ul.a>
+<hr/>
 
-li { 
-  padding-left: 16px; 
-}
 
-li::before {
-  content: "•"; /* Insert content that looks like bullets */
-  padding-right: 8px;
-  color: blue; /* Or a color you prefer */
-}
-</style>
+
 
   
-<h1/>
-  
+
 </body>
 </html>
