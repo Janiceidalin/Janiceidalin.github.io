@@ -32,7 +32,7 @@ table.b { border-collapse: collapse; }
   border-right: solid 1px #f00; 
   border-left: solid 1px #f00;
 }
-table.c, td, th {  
+table.c, .c td, .c th {  
   border: 1px solid #ddd;
   text-align: left;
 }
@@ -43,8 +43,25 @@ table.c {
   margin:auto;
 }
 
-.c th, td {
+.c th,.c td {
   padding: 15px;
+}
+  
+table.d {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.d th,.d td {
+  text-align: left;
+  padding: 8px;
+}
+
+.d tr:nth-child(even){background-color: lightgrey}
+
+.d th {
+  background-color: #4CAF50;
+  color: white;
 }
 
   
@@ -118,6 +135,23 @@ table.c {
   </tr>
 </table>
 <hr/>
+<table class="d">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+
 <hr/>
 <hr/>
 
