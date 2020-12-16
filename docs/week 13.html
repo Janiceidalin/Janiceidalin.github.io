@@ -23,10 +23,15 @@ ul.b {
   list-style-image: url('images/marker.png');
 }
   
-table, th, td {
+table.a {
   border: 1px solid black;
 }
-
+table.b { border-collapse: collapse; }
+tr { border: none; }
+td {
+  border-right: solid 1px #f00; 
+  border-left: solid 1px #f00;
+}
   
   
 </style>
@@ -54,7 +59,7 @@ table, th, td {
   
 <hr/>
   
-<table>
+<table class="a">
   <tr>
     <th>Firstname</th>
     <th>Lastname</th>
@@ -70,7 +75,18 @@ table, th, td {
 </table>
 
 <hr/>
+<table class="b">
+<tr>
+<td>a</td>
+<td>b</td>
+</tr>
+<tr>
+<td>c</td>
+<td>d</td>
+</tr>
+</table>
 <hr/>
+  
 <hr/>
 <hr/>
 <hr/>
